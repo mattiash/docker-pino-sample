@@ -1,0 +1,19 @@
+{
+    "name": "docker-typescript-sample",
+    "version": "1.0.0",
+    "description": "Sample project for running typescript code in docker",
+    "main": "build/index.js",
+    "scripts": {
+        "test": "multi-tape build/test/test-*.js",
+        "autotest": "multi-tape -p 4 -o build/test/test-*.js",
+        "build": "tsc"
+    },
+    "author": "Mattias Holmlund <mattias@holmlund.se>",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^10.12.18",
+        "multi-tape": "^1.2.1",
+        "purple-tape": "^2.0.1",
+        "typescript": "^3.2.2"
+    }
+}

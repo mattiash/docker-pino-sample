@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2016",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "sourceMap": false,
+        "strictNullChecks": true,
+        "moduleResolution": "node",
+        "preserveConstEnums": true,
+        "inlineSourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": ["declarations/*"]
+        },
+        "outDir": "./build"
+    },
+    "include": ["*.ts", "lib/*.ts", "test/*.ts"],
+    "exclude": ["node_modules"]
+}
