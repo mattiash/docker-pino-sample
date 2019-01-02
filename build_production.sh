@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t docker-typescript-sample:latest .
+docker build -t docker-pino-sample:latest .

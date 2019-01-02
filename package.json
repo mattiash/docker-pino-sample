@@ -1,7 +1,7 @@
 {
-    "name": "docker-typescript-sample",
+    "name": "docker-pino-sample",
     "version": "1.0.0",
-    "description": "Sample project for running typescript code in docker",
+    "description": "Sample project for using pino in docker",
     "main": "build/index.js",
     "scripts": {
         "test": "multi-tape build/test/test-*.js",
