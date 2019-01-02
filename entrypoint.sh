@@ -23,5 +23,6 @@ pid="$!"
 # wait forever
 while true
 do
-  tail -f /dev/null & wait ${!}
+  tail -f /dev/null &
+  wait ${!}
 done
