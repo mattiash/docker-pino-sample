@@ -1,3 +1,4 @@
+import logger from './logger'
 import { createServer } from 'http'
 
 const server = createServer((_req, res) => {
@@ -6,12 +7,12 @@ const server = createServer((_req, res) => {
 })
 
 server.listen(3000, () => {
-    console.log('Listening')
+    logger.info('Listening')
 })
 
 process.on('SIGTERM', () => {
-    console.log('Shutting down')
+    logger.info('Shutting down')
     server.close(() => {
-        console.log('Socket closed')
+        logger.info('Socket closed')
     })
 })
