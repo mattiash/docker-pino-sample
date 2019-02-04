@@ -10,6 +10,11 @@ server.listen(3000, () => {
     logger.info('Listening')
 })
 
+setTimeout(() => {
+    logger.info('Exiting with 1')
+    process.exit(1)
+}, 10000)
+
 process.on('SIGTERM', () => {
     logger.info('Shutting down')
     server.close(() => {
